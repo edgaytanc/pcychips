@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Mapa del Sitio - PC&amp;CHIPS</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body
+    class="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white font-display antialiased selection:bg-primary-100 selection:text-primary-900">
+    <div class="relative flex min-h-screen flex-col overflow-x-hidden">
+        <site-header active="mapa"></site-header>
+        <main class="flex-grow">
+            <section class="relative w-full overflow-hidden bg-white dark:bg-neutral-900 pt-32 pb-16 lg:pt-48 lg:pb-24">
+                <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl -z-10">
+                </div>
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <h1 class="text-4xl font-extrabold tracking-tight text-neutral-900 dark:text-white sm:text-5xl">
+                            Mapa del Sitio
+                        </h1>
+                        <p class="mt-4 text-xl text-neutral-500 dark:text-neutral-400">
+                            Visión general de todas las páginas disponibles en nuestro sitio web.
+                        </p>
+                    </div>
+
+                    <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+                        <!-- Principal -->
+                        <div class="space-y-4">
+                            <h2 class="text-xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary-600">home</span> Principal
+                            </h2>
+                            <ul class="space-y-2 text-neutral-600 dark:text-neutral-300">
+                                <li><a href="index.html" class="hover:text-primary-600 hover:underline">Inicio</a></li>
+                                <li><a href="nosotros.html" class="hover:text-primary-600 hover:underline">Sobre
+                                        Nosotros</a></li>
+                                <li><a href="casos.html" class="hover:text-primary-600 hover:underline">Casos de
+                                        Éxito</a></li>
+                                <li><a href="contacto.html" class="hover:text-primary-600 hover:underline">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Servicios -->
+                        <div class="space-y-4">
+                            <h2 class="text-xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary-600">design_services</span>
+                                Servicios
+                            </h2>
+                            <ul class="space-y-2 text-neutral-600 dark:text-neutral-300">
+                                <li><a href="servicios.html" class="hover:text-primary-600 hover:underline">Servicios
+                                        Principales</a></li>
+                                <li><a href="desarrollo.html" class="hover:text-primary-600 hover:underline">Desarrollo
+                                        Web</a></li>
+                                <li><a href="erp.html" class="hover:text-primary-600 hover:underline">Sistemas ERP</a>
+                                </li>
+                                <li><a href="servicios.html"
+                                        class="hover:text-primary-600 transition-colors">Implementación
+                                        Sistemas ERP</a></li>
+                                <li><a href="tecnologia.html"
+                                        class="hover:text-primary-600 hover:underline">Tecnologías</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Legal -->
+                        <div class="space-y-4">
+                            <h2 class="text-xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary-600">gavel</span> Legal
+                            </h2>
+                            <ul class="space-y-2 text-neutral-600 dark:text-neutral-300">
+                                <li><a href="politica.html" class="hover:text-primary-600 hover:underline">Política de
+                                        Privacidad</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <!-- Mobile Menu (Hidden by default) -->
+    <site-footer></site-footer>
+    <mobile-menu></mobile-menu>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/components/mobile-menu.js"></script>
+    <script src="js/menu.js"></script>
+    <whatsapp-button></whatsapp-button>
+    <script src="js/components/whatsapp-button.js"></script>
+</body>
+
+</html>

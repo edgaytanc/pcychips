@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contacto - PC&amp;CHIPS</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body
+    class="bg-white dark:bg-neutral-900 font-display text-neutral-800 dark:text-neutral-100 transition-colors duration-200 antialiased selection:bg-primary-100 selection:text-primary-900">
+    <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <site-header active="contacto"></site-header>
+        <main class="flex-grow">
+            <section class="relative pt-32 pb-16 lg:pt-48 lg:pb-24 px-6 md:px-12 lg:px-20 overflow-hidden">
+                <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl -z-10">
+                </div>
+                <div class="max-w-7xl mx-auto">
+                    <div class="max-w-3xl">
+                        <span
+                            class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-primary uppercase bg-primary/10 rounded-full">Contáctanos</span>
+                        <h1
+                            class="text-4xl md:text-6xl font-black tracking-tight text-neutral-900 dark:text-white mb-6">
+                            Hablemos de tu <span
+                                class="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">visión
+                                digital</span>
+                        </h1>
+                        <p class="mt-6 text-lg leading-8 text-neutral-300 max-w-2xl mx-auto">
+                            Desde desarrollo web a medida hasta consultoría experta en Sistemas.
+                            Estamos listos para escuchar tu proyecto y hacerlo realidad.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="px-6 md:px-12 lg:px-20 py-16 lg:py-24">
+                <div class="max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+                        <div class="lg:col-span-7 xl:col-span-8 order-2 lg:order-1">
+                            <div
+                                class="bg-white dark:bg-neutral-800 rounded-[2rem] p-8 md:p-10 shadow-soft border border-neutral-100 dark:border-neutral-700 h-full">
+                                <h3 class="text-2xl font-bold text-neutral-900 dark:text-white mb-2">Envíanos un mensaje
+                                </h3>
+                                <p class="text-neutral-500 dark:text-neutral-400 mb-8 text-sm">Nos pondremos en contacto
+                                    contigo en menos de 24 horas.</p>
+                                <form action="#" method="POST" class="space-y-6" id="contact-form">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div class="group relative z-0 w-full mb-2">
+                                            <input
+                                                class="block py-3 px-4 w-full text-base text-neutral-900 dark:text-white bg-neutral-50 dark:bg-neutral-900/50 border border-neutral-200 dark:border-neutral-700 rounded-xl appearance-none focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary peer transition-colors"
+                                                id="name" name="name" placeholder=" " required="" type="text" />
+                                            <label
+                                                class="peer-focus:font-medium absolute text-sm text-neutral-500 dark:text-neutral-400 duration-300 transform -translate-y-4 scale-75 top-4 left-4 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
+                                                for="name">Nombre Completo</label>
+                                        </div>
+                                        <div class="group relative z-0 w-full mb-2">
+                                            <input
+                                                class="block py-3 px-4 w-full text-base text-neutral-900 dark:text-white bg-neutral-50 dark:bg-neutral-900/50 border border-neutral-200 dark:border-neutral-700 rounded-xl appearance-none focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary peer transition-colors"
+                                                id="email" name="email" placeholder=" " required="" type="email" />
+                                            <label
+                                                class="peer-focus:font-medium absolute text-sm text-neutral-500 dark:text-neutral-400 duration-300 transform -translate-y-4 scale-75 top-4 left-4 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
+                                                for="email">Correo Electrónico</label>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div class="relative">
+                                            <label
+                                                class="block mb-2 text-sm font-medium text-neutral-600 dark:text-neutral-400"
+                                                for="project_type">Tipo de Proyecto</label>
+                                            <div class="relative">
+                                                <select
+                                                    class="block w-full px-4 py-3 text-base text-neutral-900 dark:text-white border border-neutral-200 dark:border-neutral-700 rounded-xl bg-neutral-50 dark:bg-neutral-900/50 focus:ring-2 focus:ring-primary/20 focus:border-primary appearance-none cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+                                                    id="project_type" name="project_type">
+                                                    <option disabled="" selected="">Selecciona una opción</option>
+                                                    <option value="web">Desarrollo Web Personalizado</option>
+                                                    <option value="erp">Implementación ERP</option>
+                                                    <option value="consulting">Consultoría Digital</option>
+                                                    <option value="mobile">Desarrollo Móvil</option>
+                                                </select>
+                                                <div
+                                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-neutral-500">
+                                                    <span class="material-symbols-outlined text-xl">expand_more</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="relative">
+                                            <label
+                                                class="block mb-2 text-sm font-medium text-neutral-600 dark:text-neutral-400"
+                                                for="budget">Presupuesto Estimado (Opcional)</label>
+                                            <div class="relative">
+                                                <select
+                                                    class="block w-full px-4 py-3 text-base text-neutral-900 dark:text-white border border-neutral-200 dark:border-neutral-700 rounded-xl bg-neutral-50 dark:bg-neutral-900/50 focus:ring-2 focus:ring-primary/20 focus:border-primary appearance-none cursor-pointer hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+                                                    id="budget" name="budget">
+                                                    <option disabled="" selected="">Rango de inversión</option>
+                                                    <option value="small">&lt; $5k USD</option>
+                                                    <option value="medium">$5k - $20k USD</option>
+                                                    <option value="large">$20k - $50k USD</option>
+                                                    <option value="enterprise">&gt; $50k USD</option>
+                                                </select>
+                                                <div
+                                                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-neutral-500">
+                                                    <span class="material-symbols-outlined text-xl">attach_money</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="group relative z-0 w-full mt-8">
+                                        <textarea
+                                            class="block py-3 px-4 w-full text-base text-neutral-900 dark:text-white bg-neutral-50 dark:bg-neutral-900/50 border border-neutral-200 dark:border-neutral-700 rounded-xl appearance-none focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary peer transition-colors resize-none"
+                                            id="message" name="message" placeholder=" " required="" rows="4"></textarea>
+                                        <label
+                                            class="peer-focus:font-medium absolute text-sm text-neutral-500 dark:text-neutral-400 duration-300 transform -translate-y-4 scale-75 top-4 left-4 -z-10 origin-[0] peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
+                                            for="message">Cuéntanos más sobre tu proyecto...</label>
+                                    </div>
+                                    <div class="pt-4 flex items-center justify-between">
+                                        <p class="text-xs text-neutral-400 hidden sm:block">
+                                            Protegemos tus datos. Lee nuestra <a class="underline hover:text-primary"
+                                                href="#">política de privacidad</a>.
+                                        </p>
+                                        <button type="submit"
+                                            class="group flex items-center justify-center gap-2 rounded-full h-12 px-8 bg-primary hover:bg-primary-dark text-white text-base font-semibold shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all transform hover:-translate-y-0.5 w-full sm:w-auto">
+                                            <span>Enviar Solicitud</span>
+                                            <span
+                                                class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">send</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 xl:col-span-4 flex flex-col gap-8 order-1 lg:order-2">
+                            <div class="grid grid-cols-1 gap-4">
+                                <a class="group flex items-center gap-5 p-5 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-2xl hover:border-primary/30 dark:hover:border-primary/50 hover:shadow-md transition-all"
+                                    href="mailto:hola@techsolutions.com">
+                                    <div
+                                        class="flex-shrink-0 size-12 rounded-lg bg-blue-50 dark:bg-blue-900/30 text-primary flex items-center justify-center group-hover:scale-110 transition-transform">
+                                        <span class="material-symbols-outlined">mail</span>
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-0.5">
+                                            Escríbenos</p>
+                                        <p class="text-base font-bold text-neutral-900 dark:text-white">
+                                            edgaytanc@pcychips.com</p>
+                                    </div>
+                                </a>
+                                <a class="group flex items-center gap-5 p-5 bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 rounded-2xl hover:border-green-500/30 dark:hover:border-green-500/50 hover:shadow-md transition-all"
+                                    href="#">
+                                    <div
+                                        class="flex-shrink-0 size-12 rounded-lg bg-green-50 dark:bg-green-900/30 text-green-600 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                        <span class="material-symbols-outlined">chat</span>
+                                    </div>
+                                    <div>
+                                        <p
+                                            class="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-0.5">
+                                            WhatsApp</p>
+                                        <p class="text-base font-bold text-neutral-900 dark:text-white">+502 5511 7730
+                                        </p>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div
+                                class="bg-white dark:bg-neutral-800 rounded-2xl border border-neutral-200 dark:border-neutral-700 p-6 shadow-sm">
+                                <h4
+                                    class="text-sm font-bold text-neutral-900 dark:text-white uppercase tracking-wider mb-4 flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-neutral-400">schedule</span> Horario de
+                                    Atención
+                                </h4>
+                                <div class="space-y-3">
+                                    <div
+                                        class="flex justify-between items-center text-sm border-b border-neutral-100 dark:border-neutral-700 pb-2">
+                                        <span class="text-neutral-600 dark:text-neutral-400 font-medium">Lunes -
+                                            Viernes</span>
+                                        <span class="text-neutral-900 dark:text-white font-semibold">9:00 AM - 6:00
+                                            PM</span>
+                                    </div>
+                                    <div
+                                        class="flex justify-between items-center text-sm border-b border-neutral-100 dark:border-neutral-700 pb-2">
+                                        <span class="text-neutral-600 dark:text-neutral-400 font-medium">Sábados</span>
+                                        <span class="text-neutral-900 dark:text-white font-semibold">9:00 AM - 1:00
+                                            PM</span>
+                                    </div>
+                                    <div class="flex justify-between items-center text-sm">
+                                        <span class="text-neutral-600 dark:text-neutral-400 font-medium">Domingos</span>
+                                        <span
+                                            class="text-rose-500 font-semibold bg-rose-50 dark:bg-rose-900/20 px-2 py-0.5 rounded text-xs">Cerrado</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <site-footer></site-footer>
+    </div>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <mobile-menu></mobile-menu>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/components/mobile-menu.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/contact-form.js"></script>
+    <whatsapp-button></whatsapp-button>
+    <script src="js/components/whatsapp-button.js"></script>
+</body>
+
+</html>
