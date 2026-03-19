@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: pcychips-web
+    restart: unless-stopped
+    ports:
+      - "80:80"
